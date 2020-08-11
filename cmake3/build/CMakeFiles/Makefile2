@@ -63,10 +63,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leecw/play/cmake3
+CMAKE_SOURCE_DIR = /home/namu/Reps/CMake/cmake3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leecw/play/cmake3/build
+CMAKE_BINARY_DIR = /home/namu/Reps/CMake/cmake3/build
 
 #=============================================================================
 # Directory level rules for the build root directory

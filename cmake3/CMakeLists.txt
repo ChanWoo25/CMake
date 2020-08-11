@@ -28,5 +28,44 @@ function(special first second third forth)
         message(STATUS "Got ARGV argument: ${arg}") # no limit
     endforeach()
 endfunction()
-
 special(1 2 3 4 5 6 7 8)
+
+
+function(sayMeow)
+    message(STATUS "Value of global var is: ${MY_GLOBAL_VAR}")
+    set(MY_GLOBAL_VAR 12)
+    message(STATUS "Value of global var is now: ${MY_GLOBAL_VAR}")    
+endfunction()
+set(MY_GLOBAL_VAR Meow) 
+sayMeow()
+message(STATUS "Value of global var is after: ${MY_GLOBAL_VAR}")    
+
+
+function(increment var)
+    message(STATUS "Value before increment is ${${var}}")
+    math(EXPR new_value "${${var}} + 1")
+    message(STATUS "Value after increment is ${new_value}")    
+endfunction()
+
+function(increment2 var)
+    math(EXPR new_value "${${var}} + 1")
+    set(${var} ${new_value} PARENT_SCOPE)
+    message(STATUS "Value is ${new_value}")
+endfunction()
+
+set(value 14)
+increment(value)
+increment2(value)
+increment2(value)
+increment2(value)
+increment2(value)
+message(STATUS "Final Value is ${value}")
+
+function(sum out a b)
+    math(EXPR ret "${a} + ${b}")
+    set(${out} ${ret} PARENT_SCOPE)    
+endfunction()
+
+
+sum(value 3 5)
+message(STATUS "Sum value is ${value}")
