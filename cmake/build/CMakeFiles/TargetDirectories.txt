@@ -1,0 +1,8 @@
+/home/leecw/play/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/leecw/play/cmake/build/CMakeFiles/edit_cache.dir
+/home/leecw/play/cmake/build/say-hello/CMakeFiles/rebuild_cache.dir
+/home/leecw/play/cmake/build/say-hello/CMakeFiles/edit_cache.dir
+/home/leecw/play/cmake/build/say-hello/CMakeFiles/say-hello.dir
+/home/leecw/play/cmake/build/hello-exe/CMakeFiles/rebuild_cache.dir
+/home/leecw/play/cmake/build/hello-exe/CMakeFiles/edit_cache.dir
+/home/leecw/play/cmake/build/hello-exe/CMakeFiles/hello.dir

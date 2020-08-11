@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/leecw/play/cmake/build/say-hello",
+  "command": "/usr/bin/g++-5 -DSAY_HELLO_VERSION=8 -I/home/leecw/play/cmake/say-hello/src -g -o CMakeFiles/say-hello.dir/src/say-hello/hello.cpp.o -c /home/leecw/play/cmake/say-hello/src/say-hello/hello.cpp",
+  "file": "/home/leecw/play/cmake/say-hello/src/say-hello/hello.cpp"
+},
+{
+  "directory": "/home/leecw/play/cmake/build/hello-exe",
+  "command": "/usr/bin/g++-5 -DSAY_HELLO_VERSION=8 -I/home/leecw/play/cmake/say-hello/src -g -o CMakeFiles/hello.dir/main.cpp.o -c /home/leecw/play/cmake/hello-exe/main.cpp",
+  "file": "/home/leecw/play/cmake/hello-exe/main.cpp"
+}
+]

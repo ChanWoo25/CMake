@@ -1,0 +1,2 @@
+/home/leecw/play/cmake3/build/CMakeFiles/rebuild_cache.dir
+/home/leecw/play/cmake3/build/CMakeFiles/edit_cache.dir

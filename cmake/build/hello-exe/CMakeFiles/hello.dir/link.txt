@@ -1,0 +1,1 @@
+/usr/bin/g++-5 -g CMakeFiles/hello.dir/main.cpp.o -o hello  ../say-hello/libsay-hello.a 
