@@ -11,8 +11,6 @@ set(UR_LIST "One;Two")
 message(${MY_LIST})
 message(${UR_LIST}) # 2 variable's same!
 
-#add_subdirectory(sub)
-
 set(NO_CACHED_VAR "no-cached")
 set(CACHED_VAR "cached" CACHE STRING "This is Cached Var")
 set(AD_CACHED_VAR "adcached" CACHE STRING "This is Advanced Cached Var")
@@ -32,3 +30,11 @@ message("${INTERNAL_VAR}")
 
 option(boo "Bool type variable" ON)
 message(${boo})
+
+add_executable(root src/hello.cpp)
+set_property(
+    TARGET root
+    PROPERTY CXX_STANDARD 11
+    )
+get_property(root_cxx TARGET root PROPERTY CXX_STANDARD)
+message("${root_cxx}")
